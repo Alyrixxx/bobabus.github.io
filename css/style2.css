@@ -3,7 +3,7 @@ body {
   height: 100vh; /* Высота на 100% экрана */
   position: relative; /* Устанавливаем относительное позиционирование для body */
   overflow: hidden; /* Отключаем прокрутку */
-  background-image: url('/image/Piper_Perri_Surrounded.webp.png'); /* Устанавливаем фоновое изображение */
+  background-image: url('image/Piper_Perri_Surrounded.webp.png'); /* Устанавливаем фоновое изображение */
   background-size: cover; /* Покрывает весь экран */
   background-position: center; /* Центрируем изображение */
 }
