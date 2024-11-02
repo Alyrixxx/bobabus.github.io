@@ -3,7 +3,7 @@ body {
   height: 100vh; /* Высота на 100% экрана */
   position: relative; /* Устанавливаем относительное позиционирование для body */
   overflow: hidden; /* Отключаем прокрутку */
-  background-image: url('/image/1679033005_bogatyr-club-p-smeshnoi-zadnii-fon-dlya-zuma-foni-instagr-21.jpg'); /* Устанавливаем фоновое изображение */
+  background-image: url('image/1679033005_bogatyr-club-p-smeshnoi-zadnii-fon-dlya-zuma-foni-instagr-21.jpg'); /* Устанавливаем фоновое изображение */
   background-size: cover; /* Покрывает весь экран */
   background-position: center; /* Центрируем изображение */
 }
