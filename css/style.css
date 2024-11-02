@@ -1,0 +1,60 @@
+body {
+  margin: 0; /* Убираем отступы у body */
+  height: 100vh; /* Высота на 100% экрана */
+  position: relative; /* Устанавливаем относительное позиционирование для body */
+  overflow: hidden; /* Отключаем прокрутку */
+  background-image: url('/image/1679033005_bogatyr-club-p-smeshnoi-zadnii-fon-dlya-zuma-foni-instagr-21.jpg'); /* Устанавливаем фоновое изображение */
+  background-size: cover; /* Покрывает весь экран */
+  background-position: center; /* Центрируем изображение */
+}
+
+.center-top-text {
+  text-align: center; /* Центрируем текст по горизонтали */
+  margin-top: 20px; /* Отступ сверху */
+}
+
+  .fancy-button::after {
+    content: "→"; /* Можно заменить на другую стрелку */
+    margin-left: 8px; /* Отступ от текста */
+    font-size: 16px; /* Размер стрелки */
+  }
+
+  .fancy-button {
+    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Градиент */
+    border: none;
+    border-radius: 30px; /* Закругленные края */
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Плавные переходы */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Тень */
+    margin-top: 125px;
+  }
+  
+  /* Эффект при наведении */
+  .fancy-button:hover {
+    background: linear-gradient(135deg, #2575fc, #6a11cb); /* Перевернутый градиент */
+    transform: scale(1.05); /* Увеличение кнопки */
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3); /* Усиленная тень */
+  }
+  
+  /* Эффект при нажатии */
+  .fancy-button:active {
+    transform: scale(0.98); /* Легкое уменьшение при нажатии */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .toalbert {
+    position: absolute; /* Абсолютное позиционирование */
+    right: 0; /* Прикрепляем к левой границе */
+    bottom: 0; /* Прикрепляем к нижней границе */
+    color: white; /* Цвет текста */
+    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон для читаемости */
+    padding: 10px; /* Отступы вокруг текста */
+    border-radius: 5px; /* Закругленные углы */
+    margin-right: 10px; /* Отступ от краев окна */
+    margin-bottom: 30px;
+    font-family: 'Tektur', sans-serif; /* Используем шрифт */
+  }

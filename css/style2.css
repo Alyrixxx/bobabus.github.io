@@ -1,0 +1,90 @@
+body {
+  margin: 0; /* Убираем отступы у body */
+  height: 100vh; /* Высота на 100% экрана */
+  position: relative; /* Устанавливаем относительное позиционирование для body */
+  overflow: hidden; /* Отключаем прокрутку */
+  background-image: url('/image/Piper_Perri_Surrounded.webp.png'); /* Устанавливаем фоновое изображение */
+  background-size: cover; /* Покрывает весь экран */
+  background-position: center; /* Центрируем изображение */
+}
+
+.center-top-text {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  /* Стиль кнопки с новыми эффектами */
+  .fancy-button {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    border: none;
+    border-radius: 50px;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  /* Эффект при наведении */
+  .fancy-button:hover {
+    background: linear-gradient(135deg, #feb47b, #ff7e5f);
+    transform: scale(1.1) rotate(-2deg); /* Увеличение и лёгкий наклон */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+  }
+  
+  /* Эффект при нажатии */
+  .fancy-button:active {
+    transform: scale(0.95);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Стиль стрелки */
+  .arrow {
+    font-size: 18px;
+  }
+
+  h1 {
+    font-size: 48px; /* Размер текста заголовка */
+    margin-bottom: 20px; /* Отступ снизу */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Легкая тень для текста */
+    color: crimson;
+    transition: transform 0.3s ease; /* Плавный переход для анимации */
+}
+
+h1:hover {
+    transform: scale(1.06); /* Увеличиваем текст при наведении */
+}
+
+/* Анимация тряски */
+@keyframes shake {
+  0%, 100% { transform: translate(0); }
+  25% { transform: translate(-5px, 0); }
+  50% { transform: translate(5px, 0); }
+  75% { transform: translate(-5px, 0); }
+}
+
+.shake {
+  animation: shake 0.5s; /* Продолжительность анимации */
+}
+  
+  video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Обеспечивает заполнение всего экрана */
+    pointer-events: none; /* Отключает все события указателя (клики и т.д.) */
+  }
